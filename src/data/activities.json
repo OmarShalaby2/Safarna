@@ -1,0 +1,13 @@
+[
+  { "id": "a1", "destinationId": "aswan", "name": "Nile Boat Trip", "price": 400, "durationHours": 2, "category": "Relaxation", "image": "https://images.unsplash.com/photo-1544963813-4c8b3f5f3d1a?q=80&w=800" },
+  { "id": "a2", "destinationId": "aswan", "name": "Felucca Ride at Sunset", "price": 200, "durationHours": 1.5, "category": "Relaxation", "image": "https://images.unsplash.com/photo-1544963813-4c8b3f5f3d1a?q=80&w=800" },
+  { "id": "a3", "destinationId": "aswan", "name": "Desert Safari", "price": 600, "durationHours": 3, "category": "Adventure", "image": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=800" },
+  { "id": "a4", "destinationId": "luxor", "name": "Hot Air Balloon Ride", "price": 1500, "durationHours": 1, "category": "Adventure", "image": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=800" },
+  { "id": "a5", "destinationId": "luxor", "name": "Cultural Tour with Guide", "price": 350, "durationHours": 3, "category": "Culture", "image": "https://images.unsplash.com/photo-1608022482842-e6c78f5d6e73?q=80&w=800" },
+  { "id": "a6", "destinationId": "cairo", "name": "Camel Ride at the Pyramids", "price": 250, "durationHours": 1, "category": "Adventure", "image": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?q=80&w=800" },
+  { "id": "a7", "destinationId": "cairo", "name": "Nile Dinner Cruise", "price": 550, "durationHours": 2.5, "category": "Relaxation", "image": "https://images.unsplash.com/photo-1544963813-4c8b3f5f3d1a?q=80&w=800" },
+  { "id": "a8", "destinationId": "sharm", "name": "Snorkeling Trip", "price": 500, "durationHours": 3, "category": "Adventure", "image": "https://images.unsplash.com/photo-1559059957-14fed2b6e05f?q=80&w=800" },
+  { "id": "a9", "destinationId": "sharm", "name": "Desert Quad Biking", "price": 700, "durationHours": 2, "category": "Adventure", "image": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=800" },
+  { "id": "a10", "destinationId": "hurghada", "name": "Diving Trip", "price": 900, "durationHours": 4, "category": "Adventure", "image": "https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?q=80&w=800" },
+  { "id": "a11", "destinationId": "dahab", "name": "Free Diving Course", "price": 800, "durationHours": 3, "category": "Adventure", "image": "https://images.unsplash.com/photo-1583321500900-82807e458f3c?q=80&w=800" }
+]

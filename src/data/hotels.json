@@ -1,0 +1,13 @@
+[
+  { "id": "h1", "destinationId": "aswan", "name": "Nile View Hotel", "pricePerNight": 700, "rating": 4.2, "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800", "amenities": ["WiFi", "Nile View", "Breakfast"] },
+  { "id": "h2", "destinationId": "aswan", "name": "Aswan Palace", "pricePerNight": 900, "rating": 4.5, "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800", "amenities": ["WiFi", "Pool", "Breakfast", "Gym"] },
+  { "id": "h3", "destinationId": "aswan", "name": "Luxury Nile Resort", "pricePerNight": 1500, "rating": 4.8, "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800", "amenities": ["WiFi", "Private Beach", "Spa", "All Inclusive"] },
+  { "id": "h4", "destinationId": "luxor", "name": "Karnak Inn", "pricePerNight": 650, "rating": 4.1, "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=800", "amenities": ["WiFi", "Breakfast"] },
+  { "id": "h5", "destinationId": "luxor", "name": "Valley View Hotel", "pricePerNight": 1050, "rating": 4.6, "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=800", "amenities": ["WiFi", "Pool", "Breakfast"] },
+  { "id": "h6", "destinationId": "cairo", "name": "Downtown Cairo Suites", "pricePerNight": 800, "rating": 4.3, "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=800", "amenities": ["WiFi", "Breakfast", "Gym"] },
+  { "id": "h7", "destinationId": "cairo", "name": "Pyramids Grand Hotel", "pricePerNight": 1400, "rating": 4.7, "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=800", "amenities": ["WiFi", "Pyramids View", "Pool", "Spa"] },
+  { "id": "h8", "destinationId": "sharm", "name": "Red Sea Breeze Resort", "pricePerNight": 1200, "rating": 4.5, "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=800", "amenities": ["WiFi", "Beach Access", "Diving Center"] },
+  { "id": "h9", "destinationId": "sharm", "name": "Naama Bay Suites", "pricePerNight": 1800, "rating": 4.9, "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=800", "amenities": ["WiFi", "All Inclusive", "Private Beach", "Spa"] },
+  { "id": "h10", "destinationId": "hurghada", "name": "Marina View Hotel", "pricePerNight": 950, "rating": 4.3, "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800", "amenities": ["WiFi", "Marina View", "Breakfast"] },
+  { "id": "h11", "destinationId": "dahab", "name": "Lagoon Beach Camp", "pricePerNight": 500, "rating": 4.4, "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=800", "amenities": ["WiFi", "Beach Access", "Breakfast"] }
+]

@@ -1,0 +1,14 @@
+[
+  { "id": "p1", "destinationId": "aswan", "name": "Philae Temple", "entryFee": 300, "durationHours": 2.5, "category": "History", "image": "https://images.unsplash.com/photo-1601513237763-4bc4d1d0c5a1?q=80&w=800" },
+  { "id": "p2", "destinationId": "aswan", "name": "Nubian Village", "entryFee": 150, "durationHours": 3, "category": "Culture", "image": "https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?q=80&w=800" },
+  { "id": "p3", "destinationId": "aswan", "name": "Abu Simbel", "entryFee": 400, "durationHours": 4, "category": "History", "image": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?q=80&w=800" },
+  { "id": "p4", "destinationId": "aswan", "name": "High Dam", "entryFee": 100, "durationHours": 1.5, "category": "Landmark", "image": "https://images.unsplash.com/photo-1601513237763-4bc4d1d0c5a1?q=80&w=800" },
+  { "id": "p5", "destinationId": "luxor", "name": "Valley of the Kings", "entryFee": 300, "durationHours": 3, "category": "History", "image": "https://images.unsplash.com/photo-1608022482842-e6c78f5d6e73?q=80&w=800" },
+  { "id": "p6", "destinationId": "luxor", "name": "Karnak Temple", "entryFee": 250, "durationHours": 2.5, "category": "History", "image": "https://images.unsplash.com/photo-1608022482842-e6c78f5d6e73?q=80&w=800" },
+  { "id": "p7", "destinationId": "cairo", "name": "Pyramids of Giza", "entryFee": 400, "durationHours": 3, "category": "History", "image": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?q=80&w=800" },
+  { "id": "p8", "destinationId": "cairo", "name": "Egyptian Museum", "entryFee": 300, "durationHours": 2, "category": "Culture", "image": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?q=80&w=800" },
+  { "id": "p9", "destinationId": "cairo", "name": "Khan El Khalili", "entryFee": 0, "durationHours": 2, "category": "Shopping", "image": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?q=80&w=800" },
+  { "id": "p10", "destinationId": "sharm", "name": "Ras Mohammed National Park", "entryFee": 300, "durationHours": 4, "category": "Nature", "image": "https://images.unsplash.com/photo-1559059957-14fed2b6e05f?q=80&w=800" },
+  { "id": "p11", "destinationId": "hurghada", "name": "Giftun Island", "entryFee": 350, "durationHours": 5, "category": "Nature", "image": "https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?q=80&w=800" },
+  { "id": "p12", "destinationId": "dahab", "name": "Blue Hole", "entryFee": 50, "durationHours": 3, "category": "Nature", "image": "https://images.unsplash.com/photo-1583321500900-82807e458f3c?q=80&w=800" }
+]

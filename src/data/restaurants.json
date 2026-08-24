@@ -1,0 +1,10 @@
+[
+  { "id": "r1", "destinationId": "aswan", "name": "Nubian Kitchen", "avgMealPrice": 150, "category": "Egyptian Food", "rating": 4.5, "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800" },
+  { "id": "r2", "destinationId": "aswan", "name": "1902 Restaurant", "avgMealPrice": 300, "category": "Fine Dining", "rating": 4.7, "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800" },
+  { "id": "r3", "destinationId": "luxor", "name": "Luxor Local Kitchen", "avgMealPrice": 130, "category": "Egyptian Food", "rating": 4.4, "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800" },
+  { "id": "r4", "destinationId": "cairo", "name": "Abou El Sid", "avgMealPrice": 250, "category": "Egyptian Food", "rating": 4.6, "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800" },
+  { "id": "r5", "destinationId": "cairo", "name": "Sequoia Nile Lounge", "avgMealPrice": 400, "category": "International", "rating": 4.5, "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800" },
+  { "id": "r6", "destinationId": "sharm", "name": "Fares Seafood", "avgMealPrice": 350, "category": "Seafood", "rating": 4.6, "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800" },
+  { "id": "r7", "destinationId": "hurghada", "name": "Moby Dick Restaurant", "avgMealPrice": 220, "category": "Seafood", "rating": 4.3, "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800" },
+  { "id": "r8", "destinationId": "dahab", "name": "Dahab Lagoon Café", "avgMealPrice": 120, "category": "Egyptian Food", "rating": 4.4, "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800" }
+]

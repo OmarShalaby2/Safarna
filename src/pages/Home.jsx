@@ -1,104 +1,99 @@
-import HeroSection from "../Components/HeroSection";
-import DestinationCard from "../Components/DestinationCard";
-import HotelCard from "../Components/HotelCard";
-import ActivityCard from "../Components/ActivityCard";
+// src/pages/Home.jsx
+import { Link } from "react-router-dom";
+import { Wand2, Wallet, MapPinned, Clock3, Star } from "lucide-react";
+import destinations from "../data/destinations.json";
+import { useTrip } from "../context/TripContext";
+import { t } from "../data/translations";
 
-function Home() {
-  const destinations = [
-    {
-      id: 1,
-      name: "Cairo",
-      description: "Explore the history and beauty of Cairo.",
-      location: "Egypt",
-    },
-    {
-      id: 2,
-      name: "Alexandria",
-      description: "Enjoy the beautiful Mediterranean coast.",
-      location: "Egypt",
-    },
-    {
-      id: 3,
-      name: "Sharm El Sheikh",
-      description: "Relax and enjoy the beautiful beaches.",
-      location: "Egypt",
-    },
-  ];
+const features = [
+  { icon: Wand2, titleKey: "feature1Title", descKey: "feature1Desc" },
+  { icon: Wallet, titleKey: "feature2Title", descKey: "feature2Desc" },
+  { icon: MapPinned, titleKey: "feature3Title", descKey: "feature3Desc" },
+  { icon: Clock3, titleKey: "feature4Title", descKey: "feature4Desc" },
+];
 
-  const hotels = [
-    {
-      id: 1,
-      name: "Steigenberger Hotel",
-      description: "A comfortable hotel with great service.",
-      location: "Cairo, Egypt",
-    },
-    {
-      id: 2,
-      name: "Four Seasons Hotel",
-      description: "Enjoy a luxurious stay in Cairo.",
-      location: "Cairo, Egypt",
-    },
-  ];
-
-  const activities = [
-    {
-      id: 1,
-      name: "Nile Cruise",
-      description: "Enjoy a relaxing cruise on the Nile.",
-      location: "Cairo, Egypt",
-    },
-    {
-      id: 2,
-      name: "Desert Safari",
-      description: "Experience an exciting desert adventure.",
-      location: "Sharm El Sheikh, Egypt",
-    },
-  ];
+export default function Home() {
+  const { lang } = useTrip();
 
   return (
     <div>
-      <HeroSection />
+      {/* Hero */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-10 pb-16 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 className="font-heading text-4xl sm:text-5xl font-bold leading-tight">
+            {t(lang, "heroTitle")}
+            <br />
+            <span className="text-primary-light">{t(lang, "heroSubtitle")}</span>
+          </h1>
+          <p className="text-muted mt-4 max-w-md">{t(lang, "heroDesc")}</p>
+          <div className="flex flex-wrap gap-3 mt-6">
+            <Link to="/plan-trip" className="btn-primary">{t(lang, "planTrip")}</Link>
+            <Link to="/destinations" className="btn-secondary">{t(lang, "explore")}</Link>
+          </div>
 
-      <section>
-  <h2>Popular Destinations</h2>
+          <div className="grid grid-cols-2 gap-3 mt-10">
+            {features.map((f) => (
+              <div key={f.titleKey} className="flex items-start gap-2">
+                <span className="w-9 h-9 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                  <f.icon size={18} />
+                </span>
+                <div>
+                  <p className="text-sm font-semibold">{t(lang, f.titleKey)}</p>
+                  <p className="text-xs text-muted">{t(lang, f.descKey)}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
 
-  <div className="cards-container">
-    {destinations.map((destination) => (
-      <DestinationCard
-        key={destination.id}
-        destination={destination}
-      />
-    ))}
-  </div>
-</section>
+        <div className="relative rounded-xl2 overflow-hidden h-72 sm:h-96">
+          <img
+            src="https://images.unsplash.com/photo-1539768942893-daf53e448371?q=80&w=1200"
+            alt="Egypt travel"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </section>
 
-<section>
-  <h2>Popular Hotels</h2>
+      {/* Popular destinations */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-20">
+        <div className="flex items-center justify-between mb-5">
+          <h2 className="font-heading text-2xl font-bold">{t(lang, "popularDestinations")}</h2>
+          <Link to="/destinations" className="text-sm font-semibold text-primary-light">
+            {t(lang, "viewAll")}
+          </Link>
+        </div>
 
-  <div className="cards-container">
-    {hotels.map((hotel) => (
-      <HotelCard
-        key={hotel.id}
-        hotel={hotel}
-      />
-    ))}
-  </div>
-</section>
-
-<section>
-  <h2>Popular Activities</h2>
-
-  <div className="cards-container">
-    {activities.map((activity) => (
-      <ActivityCard
-        key={activity.id}
-        activity={activity}
-      />
-    ))}
-  </div>
-</section>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {destinations.map((d) => {
+            const name = lang === "ar" ? d.nameAr || d.name : d.name;
+            return (
+              <Link
+                to={`/destinations/${d.id}`}
+                key={d.id}
+                className="group rounded-xl2 overflow-hidden bg-white dark:bg-[#1a2233] shadow-sm border border-gray-100 dark:border-white/10"
+              >
+                <div className="h-28 overflow-hidden">
+                  <img
+                    src={d.image}
+                    alt={name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-3">
+                  <p className="font-semibold text-sm">{name}</p>
+                  <div className="flex items-center justify-between text-xs text-muted mt-1">
+                    <span>{t(lang, "egypt")}</span>
+                    <span className="flex items-center gap-1 text-amber-500">
+                      <Star size={12} fill="currentColor" /> {d.rating}
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
     </div>
   );
 }
-
-export default Home;

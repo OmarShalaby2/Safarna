@@ -1,11 +1,17 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+// src/main.jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
+import { TripProvider } from "./context/TripContext.jsx";
 import "./index.css";
-import "./styles/auth.css";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <TripProvider>
+        <App />
+      </TripProvider>
+    </BrowserRouter>
+  </React.StrictMode>
 );

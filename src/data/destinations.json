@@ -1,0 +1,56 @@
+[
+  {
+    "id": "aswan",
+    "name": "Aswan",
+    "nameAr": "أسوان",
+    "image": "/images/destinations/aswan.png",
+    "rating": 4.8,
+    "description": "Aswan is a beautiful city in southern Egypt, known for its rich culture, stunning Nile views, and historical sites.",
+    "bestTime": "October - April"
+  },
+  {
+    "id": "luxor",
+    "name": "Luxor",
+    "nameAr": "الأقصر",
+    "image": "/images/destinations/luxor.png",
+    "rating": 4.7,
+    "description": "Home to the Valley of the Kings and Karnak Temple, Luxor is an open-air museum of Ancient Egypt.",
+    "bestTime": "November - February"
+  },
+  {
+    "id": "cairo",
+    "name": "Cairo",
+    "nameAr": "القاهرة",
+    "image": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?q=80&w=1200",
+    "rating": 4.6,
+    "description": "The vibrant capital, home to the Pyramids of Giza, Islamic Cairo, and the Egyptian Museum.",
+    "bestTime": "October - April"
+  },
+  {
+    "id": "sharm",
+    "name": "Sharm El Sheikh",
+    "nameAr": "شرم الشيخ",
+    "image": "/images/destinations/sharm.png",
+    "rating": 4.9,
+    "description": "A Red Sea resort town famous for its coral reefs, diving spots, and relaxing beach resorts.",
+    "bestTime": "Year-round"
+  },
+  {
+    "id": "hurghada",
+    "name": "Hurghada",
+    "nameAr": "الغردقة",
+    "image": "/images/destinations/hurghada.png",
+    "rating": 4.6,
+    "description": "A lively Red Sea destination with sandy beaches, water sports, and vibrant marine life.",
+    "bestTime": "March - November"
+  },
+  {
+    "id": "dahab",
+    "name": "Dahab",
+    "nameAr": "دهب",
+    "image": "/images/destinations/dahab.png",
+    "rating": 4.6,
+    "description": "A laid-back Sinai town beloved by divers, backpackers, and desert lovers.",
+    "bestTime": "September - May"
+  }
+]

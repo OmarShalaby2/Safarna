@@ -1,44 +1,28 @@
-function About() {
-    return (
-      <div>
-        <h1>About Safarna</h1>
-  
-        <p>
-          Welcome to Safarna, your simple travel guide for discovering amazing
-          destinations, hotels, and activities in Egypt.
-        </p>
-  
-        <h2>What is Safarna?</h2>
-  
-        <p>
-          Safarna helps travelers explore different places, find comfortable
-          hotels, and discover exciting activities all in one website.
-        </p>
-  
-        <h2>What We Offer</h2>
-  
-        <ul>
-          <li>Explore amazing destinations</li>
-          <li>Find comfortable hotels</li>
-          <li>Discover fun activities</li>
-          <li>View useful travel information</li>
-        </ul>
-  
-        <h2>Our Goal</h2>
-  
-        <p>
-          Our goal is to make discovering and planning your next trip easier,
-          faster, and more enjoyable.
-        </p>
-  
-        <h2>Why Safarna?</h2>
-  
-        <p>
-          We bring destinations, hotels, and activities together in one simple
-          travel platform.
-        </p>
+// src/pages/About.jsx
+import { useTrip } from "../context/TripContext";
+import { t } from "../data/translations";
+
+export default function About() {
+  const { lang } = useTrip();
+  const cards = [
+    { titleKey: "aboutCard1Title", descKey: "aboutCard1Desc" },
+    { titleKey: "aboutCard2Title", descKey: "aboutCard2Desc" },
+    { titleKey: "aboutCard3Title", descKey: "aboutCard3Desc" },
+  ];
+
+  return (
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
+      <h1 className="font-heading text-3xl font-bold mb-4">{t(lang, "aboutTitle")}</h1>
+      <p className="text-muted leading-relaxed mb-4">{t(lang, "aboutP1")}</p>
+      <p className="text-muted leading-relaxed mb-4">{t(lang, "aboutP2")}</p>
+      <div className="grid sm:grid-cols-3 gap-4 mt-10">
+        {cards.map((item) => (
+          <div key={item.titleKey} className="card">
+            <p className="font-semibold mb-1">{t(lang, item.titleKey)}</p>
+            <p className="text-xs text-muted">{t(lang, item.descKey)}</p>
+          </div>
+        ))}
       </div>
-    );
-  }
-  
-  export default About;
+    </div>
+  );
+}
